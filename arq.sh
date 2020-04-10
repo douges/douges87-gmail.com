@@ -30,7 +30,7 @@ echo -n "Select Option: " ; read OPTION
 		 echo -n " Coloque o nome do namespace: "
                  read SPACE
 		 ##echo -n " Coloque o nome da API: "
-                 ##read POD
+                 #read POD
                 kubectl logs -n $SPACE -l=app.kubernetes.io/instance=$API;;
 		##kubectl logs -n $SPACE $POD;;
 		*)
