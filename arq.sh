@@ -10,7 +10,7 @@ echo -n "Select Option: " ; read OPTION
 	case  $OPTION in
 		0)
 		 echo " Aguarde a execução ..."
-                 kubectl config set-credentials k8s.prod.easynvest.io --username=admin --password=jgBZE73znP6KGTVFmWO7JELitXE3slgY
+                 kubectl config set-credentials k8s.prod.easynvest.io --username=admin --password=
 		 kubectl config set-cluster k8s.prod.easynvest.io --insecure-skip-tls-verify=true --server=https://api.k8s.prod.easynvest.io
 		 kubectl config set-context k8s.prod.easynvest.io --user=k8s.prod.easynvest.io --namespace=default --cluster=k8s.prod.easynvest.io
 		 kubectl config use-context k8s.prod.easynvest.io
